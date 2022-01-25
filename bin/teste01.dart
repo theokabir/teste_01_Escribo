@@ -8,7 +8,7 @@ void main() {
       //* entrada do número
       print("entre com o número desejado: ");
       var num = int.parse(stdin.readLineSync()!);
-      
+
       //* algoritmo principal
       int soma = 0;
       List<int> nums = [];
@@ -18,8 +18,8 @@ void main() {
           soma += i;
         }
       }
-      print("numeros divisíveis por 3 e 5 menores que $num: $nums");
-      print("soma correspondente: $soma");
+      print('\u001b[36mnumeros divisíveis por 3 e 5 menores que $num: $nums');
+      print('\u001b[32msoma correspondente: $soma\u001b[0m');
 
       //* confirmação de continuação
       print("deseja tentar novamente? [s/n]");
